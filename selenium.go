@@ -3,13 +3,12 @@ package selenium
 import (
 	"time"
 
-	"github.com/x-Xymos/selenium/chrome"
-	"github.com/x-Xymos/selenium/firefox"
-	"github.com/x-Xymos/selenium/log"
+	"github.com/x-Xymos/selenium2/chrome"
+	"github.com/x-Xymos/selenium2/firefox"
+	"github.com/x-Xymos/selenium2/log"
 )
 
 // TODO(minusnine): make an enum type called FindMethod.
-
 // Methods by which to find elements.
 const (
 	ByID              = "id"

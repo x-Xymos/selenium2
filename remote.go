@@ -18,8 +18,8 @@ import (
 	"time"
 
 	"github.com/blang/semver"
-	"github.com/x-Xymos/selenium/firefox"
-	"github.com/x-Xymos/selenium/log"
+	"github.com/x-Xymos/selenium2/firefox"
+	"github.com/x-Xymos/selenium2/log"
 )
 
 // Errors returned by Selenium server.
