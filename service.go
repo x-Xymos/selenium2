@@ -142,6 +142,15 @@ func HTMLUnit(path string) ServiceOption {
 	}
 }
 
+// SessionTimeout specifies the timeout before the server automatically
+// kills a session that hasn't had any activity in the last X seconds.
+func SessionTimeout(seconds int) ServiceOption {
+	return func(s *Service) error {
+		s.sessionTimeout = seconds
+		return nil
+	}
+}
+
 // Service controls a locally-running Selenium subprocess.
 type Service struct {
 	port            int
